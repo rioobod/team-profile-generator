@@ -11,4 +11,3 @@ Use the application to generate a webpage with the team's information.
 
 ## Screenshot of Team Profile
   
-![alt text](asset/Teamprofile.PNG)
