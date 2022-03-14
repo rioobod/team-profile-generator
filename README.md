@@ -12,3 +12,5 @@ Use the application to generate a webpage with the team's information.
 ## Screenshot
   
 ![Teamprofile](https://user-images.githubusercontent.com/95100285/158094555-3b39bb52-923e-4348-b683-81573380e676.PNG)
+
+![Sample HTML](https://rioobod.github.io/team-profile-generator/dist/index.html)
