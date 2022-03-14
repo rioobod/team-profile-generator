@@ -11,4 +11,4 @@ Use the application to generate a webpage with the team's information.
 
 ## Screenshot of Team Profile
   
-![alt text](asset/Teamprofile.PNG)
+![alt text](asset/Teamprofile.PNG)![Teamprofile](https://user-images.githubusercontent.com/95100285/158094555-3b39bb52-923e-4348-b683-81573380e676.PNG)
