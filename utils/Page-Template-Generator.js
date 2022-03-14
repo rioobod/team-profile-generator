@@ -19,26 +19,26 @@ const generateTeamCard = (member) => {
         extraAttr = `
                     <li class="list-group-item">
                     Github: 
-                        <a 
+                        <a target="_blank"
                             href="https://github.com/${member.github}" 
                             class="card-link">github: ${member.github}</a>
                     </li>
                     `
     } else if (member.school) {
-        console.log(member.school)
+        // console.log(member.school)
         extraAttr = `
-                    <li className="list-group-item">
-                       School: ${member.school}
+                    <li class="list-group-item">
+                       School:<a class="card-link"> ${member.school} </a>
                     </li>
                     `
     }
 
 
     return `
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">${name}</h5>
-        <h6 class="card-title">
+    <div id="cards" class="card" style="width: 18rem;">
+      <div class="card-body bg-primary">
+        <h5 class="card-title text-light">${name}</h5>
+        <h6 class="card-title text-light">
             <i class="${role.icon}"></i>
             ${role.roleType}
         </h6>
@@ -46,7 +46,7 @@ const generateTeamCard = (member) => {
       <ul class="list-group list-group-flush">
         <li class="list-group-item">Employee ID: ${id}</li>
         <li class="list-group-item">
-            Email: <a href="#" class="card-link">${email}</a>
+            Email: <a href="mailto:${email}" class="card-link">${email}</a>
         </li>
         ${extraAttr}
       </ul>
@@ -81,10 +81,10 @@ const generateTeamPage = (team) => {
         </head>
         
         <body>
-      <header>
-        <h1>My Team</h1>
+      <header class="bg-primary">
+        <h1 class="text-light">My Team</h1>
       </header>
-      <main class="container my-5">
+      <main class="container my-5 d-flex justify-content-center">
         ${generateTeamCards(team)}
       </main>
     </body>
